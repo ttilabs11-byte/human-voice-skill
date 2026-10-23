@@ -13,15 +13,26 @@ like it carry over to any kind of writing. Everything here is plug and play: no 
 
 - `references/recipes.md`: shapes for 12 forms (blog, article, email, reply, post, summary and more).
 - `references/devices.md`: hooks, turns, closers, and a slop-to-plain swap table.
-- `references/examples.md`: 12 before and after pairs, annotated (12 shows humor done right). Read 2 or 3 close to your task before drafting.
+- `references/examples.md`: 13 before and after pairs, annotated (12 shows humor done right, 13 shows presence). Read 2 or 3 close to your task before drafting.
+- `references/presence.md`: why correct drafts still read as AI, and how to put a person in them (the witness
+  rule, scene then point, the roughen pass). Read it before any blog, article, post or newsletter.
 - `references/humor.md`: how jokes work, three tests (relevant, benign, true), placement, ten moves.
 - `scripts/slop_check.py draft.md`: lints a draft for AI tells and flat rhythm.
 - `scripts/quote_check.py draft.md source.txt`: proves every quote is verbatim.
 
+## Someone is there
+
+A draft can pass every rule below and still read as AI, because nobody is in it. Readers feel a person when the
+writer saw something (a moment, a time, a detail), cares about some parts more than others, trusts them to get it
+without being told twice, and has something to lose. They feel a machine when every section gets equal care and
+ends on a polished line, the point is explained after it's made, and everything is positive and resolved. Rules
+remove slop; only a witness adds a person. `references/presence.md` has the evidence and the method.
+
 ## The seven moves
 
 1. **Point first.** The reader who stops after two sentences still leaves with the answer. In skimmable formats,
-   bold that one sentence.
+   bold that one sentence. In blogs, articles, posts and newsletters, a real moment may come first and the point
+   second, as long as the headline or bold line carries the point.
 2. **Specifics beat adjectives.** "Deploys went from 40 minutes to 9" beats "deploys got significantly faster". If an
    adjective has no number, name or example behind it, cut it. When you give advice, show it working on one
    example instead of listing tips.
@@ -34,6 +45,7 @@ like it carry over to any kind of writing. Everything here is plug and play: no 
 6. **Size claims honestly.** "Most", "two of the five", "I don't know yet". Precise modesty reads as confidence.
    Vague superlatives read as a sales pitch.
 7. **Land it.** End on one line that does work: a decision, a next step, a callback, a quiet joke. Never recap.
+   One landed line per piece. Sections in between end on plain facts, not on aphorisms.
 
 ## Voice
 
@@ -67,8 +79,11 @@ like it carry over to any kind of writing. Everything here is plug and play: no 
    Then write down the obvious take, the one any writer (or any AI) would produce from this brief, and look for
    the angle only this material allows: its oddest number, its sharpest case, its real cost. AI-assisted writing
    converges on the same ideas, so the default angle is the one readers have already seen.
-3. **Collect specifics.** Gather 3-5 concrete facts (numbers, names, dates, quotes) and one human detail. Read the
-   whole source first. Never guess what something says.
+3. **Collect specifics and find the witness.** Gather 3-5 concrete facts (numbers, names, dates, quotes). Read the
+   whole source first. Never guess what something says. For anything longer than a chat reply, find one real
+   moment (something that happened, to someone, at a time, with a detail) using the witness rule in
+   `references/presence.md`: the source first, then one question to the user, then the reader's own moment, then
+   an honest position. Never invent one.
 4. **Pick the shape** from `references/recipes.md`, and **set the wit dial** (below).
 5. **Draft fast**, point first.
 6. **Cut.** Remove the warm-up sentence, the recap ending, unbacked adjectives, and any list of three that exists
@@ -98,6 +113,12 @@ like it carry over to any kind of writing. Everything here is plug and play: no 
 
    Is every claim true and sourced? If the piece had only one joke, would it be this one? Cut
    the weakest line.
+
+   Step 8 adds; it must not add explanation of the point itself. Answer the sceptic's question, not your own.
+9. **Roughen.** Run the roughen pass in `references/presence.md`: keep one or two polished lines and turn the rest
+   plain, break the repeated section shape, delete bridges ("That's why...", "This is where..."), give the part you
+   care about most more room, and leave one true thing open. Then the dinner-table test: would a person say each
+   sentence out loud to one listener?
 
 ## Wit dial
 

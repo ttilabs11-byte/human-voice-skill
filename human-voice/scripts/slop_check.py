@@ -98,6 +98,13 @@ MIN_SENTENCES_FOR_RHYTHM = 6
 RHYTHM_STDEV_MIN = 4.0
 LONG_SENTENCE = 32
 HASHTAG_MAX = 2
+EXPOSITION = (r"\b(that'?s (what|why) |this is (why|what|where) |that is why|which is why|in other words|put simply|"
+              r"here'?s (why|the (straight|short|honest|real))|the (straight|short|honest) answer|it'?s a fair question|"
+              r"the reason is)")
+EXPOSITION_MAX = 1
+BUTTON_FORMS = {"blog", "article", "post", "any"}
+BUTTON_WORDS = 9
+BUTTON_MAX = 2
 
 
 def strip_quotes(text: str) -> str:
@@ -197,6 +204,19 @@ def check(text: str, form: str) -> list[tuple[str, str]]:
     long_ones = [n for n in lengths if n > LONG_SENTENCE]
     if long_ones:
         out.append(("WARN", f"{len(long_ones)} sentence(s) over {LONG_SENTENCE} words"))
+    expo = re.findall(EXPOSITION, own, re.I)
+    if len(expo) > EXPOSITION_MAX:
+        out.append(("WARN", f"{len(expo)} explaining/bridge phrases ({', '.join(sorted({e[0].strip().lower() for e in expo}))}); "
+                            "trust the reader, see presence.md"))
+    if form in BUTTON_FORMS:
+        paras = [p for p in re.split(r"\n\s*\n", own) if p.strip() and not re.match(r"\s*([#>`-]|\*\s|\d+\.)", p)]
+        buttons = 0
+        for p in paras:
+            ps = sentences(p)
+            if len(ps) >= 3 and len(ps[-1].split()) <= BUTTON_WORDS:
+                buttons += 1
+        if buttons > BUTTON_MAX:
+            out.append(("WARN", f"{buttons} paragraphs end on a short punchy line; keep one or two, end the rest on plain facts"))
     bullets = re.findall(r"^\s*[-*]\s+", text, re.M)
     if len(bullets) > max_bullets:
         out.append(("WARN", f"{len(bullets)} bullets; keep the ones that change a decision"))

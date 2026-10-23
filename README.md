@@ -11,11 +11,13 @@ and blind A/B judging.
   the turn, honest sizing, land it), the voice rules, an 8-step process and a wit dial from 0 to 3.
 - `references/recipes.md`: shapes for 12 forms.
 - `references/devices.md`: hooks, turns, closers, sentence moves and a slop-to-plain swap table.
+- `references/presence.md`: why a correct draft can still read as AI, and how to put a person in it: the witness
+  rule (find one real moment and never invent one), scene then point, and the roughen pass.
 - `references/humor.md`: the voice behind the jokes, how to build one joke, three tests (relevant, benign, true)
   and where jokes go.
-- `references/examples.md`: 12 annotated before-and-after pairs.
-- `scripts/slop_check.py`: a linter for AI tells, style-word density, reading grade, repeated phrases and flat
-  rhythm. `python scripts/slop_check.py draft.md --form blog|email|post|reply|chat|summary|notes|any`
+- `references/examples.md`: 13 annotated before-and-after pairs.
+- `scripts/slop_check.py`: a linter for AI tells, style-word density, reading grade, repeated phrases, flat
+  rhythm, over-explaining and too many punchy paragraph endings. `python scripts/slop_check.py draft.md --form blog|email|post|reply|chat|summary|notes|any`
 - `scripts/quote_check.py`: proves every quoted line is verbatim in the source.
 
 ## Install
@@ -35,6 +37,10 @@ Copy the `human-voice` folder into `~/.claude/skills/`. Claude Code picks it up 
 - Bitterly, Brooks and Schweitzer (JPSP 2017)
 - Greg Dean and Judy Carter on joke structure
 - Jentzsch and Kersting (2023) on repetitive ChatGPT jokes
+- Russell, Karpinska and Iyyer (ACL 2025) on how expert readers spot AI text
+- Jakesch, Hancock and Naaman (PNAS 2023) on misleading human cues
+- Chakrabarty, Laban and Wu (CHI 2025) on what professional writers cut from LLM prose
+- Barthes, "The Reality Effect"; Tom Wolfe's status details; Ira Glass on anecdote and reflection
 
 Blind judging, with two model judges and shuffled labels: each version beat the one before it. Across three
 rounds, the later version won 25 of 30 judgements. These are model judges, not human readers.

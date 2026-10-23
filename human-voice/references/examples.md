@@ -344,3 +344,31 @@ One request: please photograph the receipt, not the coffee.
 - The middle stays plain: steps, date, what happens to old claims. Readers trust the facts because the jokes
   stay out of them.
 - The closer calls back to the coffee, once, and doubles as a real instruction.
+
+---
+
+## 13. Presence: a correct draft that still read as AI (blog, wit dial 1)
+
+The "Before" passed every lint check and two critics scored it 7.5. Readers still knew a machine wrote it.
+
+**Before**
+> Why pay for a test nobody has asked for? It's a fair question when you pay for every test out of a thin margin.
+> So here is the straight answer with the reasoning behind it.
+>
+> A jacket finished with them looks, feels and performs exactly like a jacket without them. An inspector can see
+> a crooked seam. Nobody can see a molecule. That's what makes PFAS a different kind of risk.
+
+**After**
+> You're packing the last cartons of a water-repellent jacket order. The fabric passed everything your QC team
+> checks: shade, seams, measurements. Nothing your team can see or touch tells you how that finish was made, and
+> if it was made with PFAS, the first person to find out may be your buyer's lab.
+>
+> We should say the obvious: we sell this test. So don't take our word on whether it's worth it.
+
+**Why it works**
+- The "Before" has nobody in it. It performs empathy ("It's a fair question"), announces its reasoning, coins a
+  line ("Nobody can see a molecule") and then explains the line. Four sentences of the writer's polish, zero of
+  the reader's life.
+- The "After" opens on the reader's own moment (witness rule, level 3: no invented names or numbers), lets the
+  scene raise the question, and admits the writer's stake. Skin in the game buys more trust than reassurance.
+- A real witnessed moment from the lab team ("last spring a buyer's lab found...") would beat both. Ask for one.
